@@ -1,32 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Event invite</title>
-        <style>
-            .christmas{color:rgb(235, 47, 33);}
-            .candy{color:rgb(78, 173, 40);}
-            .details{background-color:rgb(247, 232, 72);padding:10px;width:435px;}
-            #ornaments{width: 80%; border:5px solid rgb(235, 47, 33);}
-            #invite{color:rgb(149, 180, 189);}
-        </style>
-    </head>
-    <body>
-        
-        <h1 id="invite">You're invited!</h1>
-        <h2><span class="christmas">Christmas</span> (in October) Party!</h2>
-       
-       <div class="details">
-        <p><b>The details:</b></p>
-        <ul>
-            <li>The event will take place on Grand View's campus.</li>
-            <li>Come join us from 6:00 PM to 8:00 PM on October 31 in the Student Center.</li>
-            <li>This could also be considered an Anti-Halloween party if you choose to view it that way.
-            <li>There will be <span class="candy"><b><em>CANDY!</em></b></span></li>
-        </ul></div>
-        
-        <img id="ornaments"src="https://www.kasandbox.org/programming-images/seasonal/xmas-ornaments.png">
-        <p>DISCLAIMER: Santa will <b>NOT</b> be coming. He is too busy getting presents ready for <em>actual</em> Christmas.</p>
-        
-    </body>
+<head>
+<meta charset="UTF-8">
+<title>Alt Kreativ Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="slicknav.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,900" rel="stylesheet">
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+
+	<header>
+		
+		<img src="images/Alt Kreativ Logo.png" alt="Alt Kreativ Logo" width="200px">
+		
+		
+		<ul id="menu">
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		
+	</header>
+
+
+
+
+
+
+	<main>
+		
+		<div class="row">
+			<div class="col">
+				<div class="hero">
+					<h1>Who We Are</h1>
+					<p class="heading-body-copy">Alt Kreativ is a small design company located in the heart of Iowa that can do whatever creative deed you need done. If you have any questions, reach out today!</p>
+					<a href="#" class="lets-talk">Let's Collaborate</a>
+				</div>
+			</div>
+		</div>	
+		
+		<div class="row">
+			<div class="col col-lg col-md col-sm"><img src="images/alleman.png" alt="City of Alleman website design"></div>
+			<div class="col col-lg col-md col-sm"><img src="images/gv.png" alt="Grand View Art & Design Department viewbook design"></div>
+			<div class="col col-lg col-md col-sm"><img src="images/green.png" alt="Design research: green printing"></div>
+			<div class="col col-lg col-md col-sm"><img src="images/league.png" alt="Iowa League of Cities 2019 Annual Conference brochure design"></div>
+			<div class="col col-lg col-md col-sm"><img src="images/footprint.png" alt="Footprint brand green printing guide brochure"></div>
+			<div class="col col-lg col-md col-sm"><img src="images/tshirt.png" alt="Capitol Row rowing gym t-shirt design"></div>
+		</div>		
+		
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="jquery.slicknav.js"></script>
+	<script>
+		$(function(){
+			$('#menu').slicknav();
+		});
+	</script>
+
+</body>
 </html>
